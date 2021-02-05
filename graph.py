@@ -112,10 +112,10 @@ class Graph:
             func()
 
     def mutate(self):
-        self.mutate_if(self.mutate_flip_action, 0.25)
-        self.mutate_if(self.mutate_moveto_random_if_c, 0.25)
-        self.mutate_if(self.mutate_moveto_random_if_d, 0.25)
-        self.mutate_if(self.mutate_create_node, 0.07)
-        self.mutate_if(self.mutate_remove_node, 0.05)
-        self.mutate_if(self.mutate_swap_nodes, 0.15)
+        self.mutate_if(self.mutate_flip_action, 0.35)
+        self.mutate_if(self.mutate_moveto_random_if_c, 0.35)
+        self.mutate_if(self.mutate_moveto_random_if_d, 0.35)
+        self.mutate_if(self.mutate_create_node, 0.2)
+        self.mutate_if(self.mutate_remove_node, 0.15)
+        self.mutate_if(self.mutate_swap_nodes, 0.2)
         self.validate()
