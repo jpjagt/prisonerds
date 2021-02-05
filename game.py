@@ -64,7 +64,7 @@ class Game:
 
     def evolve_graphs(self, total_scores):
         sum_of_scores = total_scores.sum(1)
-        ranking = np.argsort(sum_of_scores)
+        ranking = np.argsort(sum_of_scores)[::-1]
         graphs_to_keep = ranking[: self.n_graphs_to_keep]
         parents = self.graphs[graphs_to_keep]
 
