@@ -1,0 +1,9 @@
+#+BIND: org-export-use-babel nil
+#+TITLE: readme
+#+AUTHOR: Paul Lodder
+
+* setup
+Set up a virtualenv and install requirements from =requirements.txt=
+#+BEGIN_SRC sh
+pip install -r requirements.txt
+#+END_SRC
