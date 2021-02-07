@@ -60,7 +60,10 @@ class Game:
         return total_scores
 
     def __generate_offspring(self, graph, n_offspring):
-        return np.array([graph.clone(mutate=True) for _ in range(n_offspring)])
+        return np.array(
+            [graph.clone(mutate=True) for _ in range(n_offspring - 1)]
+            + [graph.clone(mutate=False)]
+        )
 
     def evolve_graphs(self, total_scores):
         sum_of_scores = total_scores.sum(1)
